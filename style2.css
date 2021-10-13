@@ -1,0 +1,120 @@
+
+html,body
+{
+    background-color: green;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animation-container
+{
+    width:auto;
+    height: auto;
+    cursor: pointer;
+}
+.line1
+{
+    background-color: white;
+    width:5em;
+    height: 0.5em;
+    border-radius: 5px;
+    margin:13px 0px;
+}
+.line2
+{
+    background-color: white;
+    width:5em;
+    height: 0.5em;
+    border-radius: 5px;
+    margin:13px 0px;
+}
+.line3
+{
+    background-color: white;
+    width:5em;
+    height: 0.5em;
+    border-radius: 5px;
+    margin:13px 0px;
+}
+
+
+.effect1
+{
+    position:relative;
+    animation: movedown 1s linear 0s 1 forwards,
+                rotate 2s linear 1s 1 forwards;
+    
+}
+@keyframes movedown
+{
+    from
+    {
+        top:0px;
+    }
+    to
+    {
+        top:20px;
+    }
+}
+@keyframes rotate{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(45deg);
+        transition-timing-function: ease-in-out;
+    }
+    
+}
+.effect2
+{
+    animation:  appear 1s 0s forwards,
+                disappear 1s 1s forwards;
+}
+@keyframes appear {
+    100%
+    {
+        transform: scale(1);
+    }
+
+}
+@keyframes disappear {
+    100%
+    {
+        transform : scale(0);
+    }    
+}
+.effect3
+{
+    position:relative;
+    animation: moveup3 1s linear 0s 1 forwards,
+                rotate3 2s linear 1s 1 forwards;
+}
+@keyframes moveup3
+{
+    from
+    {
+        bottom:0px;
+    }
+    to
+    {
+        bottom:20px;
+    }
+}
+@keyframes rotate3{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(-45deg);
+        transition-timing-function: ease-in-out;
+    }
+    
+}
+
